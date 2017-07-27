@@ -9,3 +9,7 @@ venv/
 config/
 temp/
 .vagrant/
+
+# NEED CHANGE ON YOUR PROJECT !!
+boilerplate/media/
+boilerplate/staticfiles/
