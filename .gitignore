@@ -1,0 +1,11 @@
+# Files to ignore
+*~
+*.pyc
+*.sqlite3
+*.DS_Store
+
+# Dirs to ignore
+venv/
+config/
+temp/
+.vagrant/
