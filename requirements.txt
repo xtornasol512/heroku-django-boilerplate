@@ -11,3 +11,4 @@ psycopg2==2.7.1
 # Pillow
 # django jet
 # psycopg2 #if uses postgresql
+# django rest framework
