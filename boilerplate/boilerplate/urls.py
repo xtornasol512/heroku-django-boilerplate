@@ -19,8 +19,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.contrib.staticfiles.urls import static
 
+# Your views
+from .views import home
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', home, name='home'),
 ]
 
 # Show images stored local in dev
