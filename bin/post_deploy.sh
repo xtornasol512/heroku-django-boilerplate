@@ -3,9 +3,18 @@
 
 echo "=> Begin  postdeploy..."
 # First, apply migrations to the schema
+if [ $DEBUG_COLLECTSTATIC == 1 ]; then
+  echo "=> Loading staticfiles..."
+  # CHANGE FOR YOUR PROJECT!!
+  python ./boilerplate/manage.py collectstatic
+else
+  echo "=> Not apply automatically Migrations!"
+fi
+
 if [ $AUTO_MIGRATE == True ]; then
   echo "=> Loading fixtures..."
-  python ./prescryptchain/manage.py migrate
+  # CHANGE FOR YOUR PROJECT!!
+  python ./boilerplate/manage.py migrate
 else
   echo "=> Not apply automatically Migrations!"
 fi
