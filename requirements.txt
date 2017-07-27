@@ -1,0 +1,12 @@
+# Django apps
+Django==1.11.3
+
+# Django heroku apps
+dj-database-url==0.4.2
+gunicorn==19.7.1
+pytz==2017.2
+whitenoise==3.3.0
+
+# Some other useful tools
+# Pillow
+# django jet
