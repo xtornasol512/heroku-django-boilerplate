@@ -5,7 +5,13 @@
 #!/bin/bash
 
 echo "-------- Setting environmental variables into ~/.profile..."
+
+# linux environs
 source ~/.profile
+
+# Mac Os, if not exist them create it!
+# source ~/.bash_profile
+
 
 # DEBUG_STATE
 if [ -z "$DEBUG_STATE" ] || [ "$DEBUG_STATE" != True ]; then
